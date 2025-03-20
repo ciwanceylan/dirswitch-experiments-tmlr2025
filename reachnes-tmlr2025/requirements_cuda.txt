@@ -1,0 +1,11 @@
+numpy>=1.15
+scipy>=1.0.0
+numba>=0.50.1
+tqdm
+pandas
+-f https://download.pytorch.org/whl/cu118
+torch==2.1.2
+-f https://data.pyg.org/whl/torch-2.1.2+cu118.html
+torch-scatter>=2.1
+torch-sparse>=0.6.18
+joblib

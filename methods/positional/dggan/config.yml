@@ -1,0 +1,25 @@
+methods:
+  dggan:
+    modes:
+      directed: True
+      weighted: False
+      node_attributed: False
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      dimensions:
+        default: 128
+        type: int
+        description: Embedding dimension.
+      batch_size:
+        default: 128
+        type: int
+        description: Batch size
+      lmbda:
+        default: 1e-5
+        type: float
+        description: Lambda value
+      lr:
+        default: 1e-4
+        type: float
+        description: Lambda value

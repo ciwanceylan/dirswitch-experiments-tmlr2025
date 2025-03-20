@@ -1,0 +1,155 @@
+methods:
+  ccassg:
+    modes:
+      directed: True
+      weighted: False
+      node_attributed: True
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      num_epochs:
+        default: 100
+        type: int
+        description: Number of training epochs
+      num_layers:
+        default: 2
+        type: int
+        description: Number of layers.
+      dimensions:
+        default: 512
+        type: int
+        description: Embedding dimension.
+      add_degree:
+        default: False
+        type: bool
+        description: Use the node degree features
+      add_lcc:
+        default: False
+        type: bool
+        description: Use the local clustering coefficient features
+      standardize:
+        default: True
+        type: bool
+        description: Standardize the input attributes.
+      use_cpu:
+        default: False
+        type: bool
+        description: Force use CPU.
+      lr:
+        default: 1e-3
+        type: float
+        description: Learning rate.
+      wd:
+        default: 0.
+        type: float
+        description: Weight decay.
+      lambd:
+        default: 1e-3
+        type: float
+        description: Lambda loss parameter.
+      dfr:
+        default: 0.2
+        type: float
+        description: feature drop out ratio.
+      der:
+        default: 0.2
+        type: float
+        description: edge drop out ratio.
+      dep1:
+        default: 0.25
+        type: float
+        description: feature drop out 1.
+      encoder:
+        default: 'gcn_rossi'
+        type: str
+        description: "Which encoder GNN to use."
+      dir_seqs:
+        default: 'U'
+        type: str
+        description: "Edge direction sequences for Switch model"
+    alt_versions:
+      ccassg_switch:
+        encoder:
+          default: 'gcn_switch'
+        dir_seqs:
+          default: 'OU::IU'
+  graphmae2:
+    modes:
+      directed: True
+      weighted: False
+      node_attributed: True
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      num_epochs:
+        default: 1000
+        type: int
+        description: Number of training epochs
+      num_layers:
+        default: 2
+        type: int
+        description: Number of layers.
+      dimensions:
+        default: 512
+        type: int
+        description: Embedding dimension.
+      add_degree:
+        default: False
+        type: bool
+        description: Use the node degree features
+      add_lcc:
+        default: False
+        type: bool
+        description: Use the local clustering coefficient features
+      standardize:
+        default: True
+        type: bool
+        description: Standardize the input attributes.
+      use_cpu:
+        default: False
+        type: bool
+        description: Force use CPU.
+      lr:
+        default: 1e-3
+        type: float
+        description: Learning rate.
+      wd:
+        default: 1e-4
+        type: float
+        description: Weight decay.
+      num_heads:
+        default: 8
+        type: int
+        description: Number of heads.
+      mask_rate:
+        default: 0.5
+        type: float
+        description: Mask ratio.
+      replace_rate:
+        default: 0.05
+        type: float
+        description: Replacement rate.
+      alpha_l:
+        default: 3
+        type: int
+        description: Loss exponent parameter.
+      lam:
+        default: 1.0
+        type: float
+        description: Loss weighting parameter.
+      encoder:
+        default: 'gat_rossi'
+        type: str
+        description: Which encoder to use.
+      dir_seqs:
+        default: 'none'
+        type: str
+        description: Which edge directions to use.
+    alt_versions:
+      graphmae2_switch:
+        encoder:
+          default: 'gat_switch'
+        num_layers:
+          default: 4
+        dir_seqs:
+          default: 'OI::IO'

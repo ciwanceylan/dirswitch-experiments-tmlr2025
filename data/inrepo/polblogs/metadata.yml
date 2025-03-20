@@ -1,0 +1,12 @@
+name: polblogs
+graph_file: polblogs.npz
+relpath: data/inrepo/polblogs/
+node_labels: multiclass
+node_labels_file: labels.json
+abspath:
+file_info:
+  filetype: npz
+graph_info:
+  num_nodes: 1490
+  weights: False
+  directed: True

@@ -1,0 +1,14 @@
+name: pokec_gender
+download: True
+relpath: data/incloud/pokec_gender/
+abspath:
+graph_file: pokec_gender.npz
+node_labels: multiclass
+node_labels_file: labels.json
+file_info:
+  filetype: npz
+graph_info:
+  num_nodes: 1632803
+  weights: False
+  directed: True
+  node_attributes: True

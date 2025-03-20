@@ -1,0 +1,1 @@
+g++ -I<path/to/conda_env/include> *.cpp -o NERD -lgsl -lgslcblas -lm -pthread -L<path/to/conda_env/lib>

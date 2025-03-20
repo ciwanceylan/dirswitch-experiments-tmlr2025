@@ -1,0 +1,14 @@
+name: ogb_arxiv_year
+download: True
+graph_file: ogb_arxiv_year.npz
+relpath: data/inrepo/ogb_arxiv_year/ogb_arxiv_year
+node_labels: multiclass
+node_labels_file: labels.json
+abspath:
+file_info:
+  filetype: npz
+graph_info:
+  num_nodes: 169343
+  weights: False
+  directed: True
+  node_attributes: True

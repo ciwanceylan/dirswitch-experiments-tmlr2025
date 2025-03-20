@@ -1,0 +1,17 @@
+methods:
+  hope:
+    modes:
+      directed: True
+      weighted: True
+      node_attributed: False
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      dimensions:
+        default: 128
+        type: int
+        description: Num embedding dims
+      beta_multiplier:
+        default: 0.5
+        type: float
+        description: Multiplied by (1/lambda_max) where lambda_max is the largest eigenvalue of the adjcency matrix.

@@ -1,0 +1,41 @@
+methods:
+  blade:
+    modes:
+      directed: True
+      weighted: False
+      node_attributed: False
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      num_epochs:
+        default: 30
+        type: int
+        description: Number of training epochs
+      num_layers:
+        default: 3
+        type: int
+        description: Number of layers.
+      dimensions:
+        default: 256
+        type: int
+        description: Embedding dimension.
+      lr:
+        default: 1e-4
+        type: float
+        description: Learning rate
+      neg_per_pos:
+        default: 1
+        type: int
+        description: Number negative samples per positive
+      use_pos_edge_score:
+        default: True
+        type: bool
+        description: Use edge weights to adjust loss function
+      init_method:
+        default: 'normal'
+        type: str
+        description: Embedding initialization.
+      use_cpu:
+        default: False
+        type: bool
+        description: Force use CPU.

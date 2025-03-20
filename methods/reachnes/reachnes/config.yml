@@ -1,0 +1,101 @@
+methods:
+  reachnesx:
+    modes:
+      directed: True
+      weighted: True
+      node_attributed: True
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      dimensions:
+        default: 128
+        type: int
+        description: Embedding dimension.
+      adj_seq:
+        default: "OU::IU"
+        type: str
+        description: Sequence of adjacency sequences for alternating neighbourhoods.
+      rw_distribution:
+        default: 'poisson'
+        type: str
+        description: Str to specify random-walk length distribution.
+      tau:
+        default: '2.0'
+        type: str
+        description: Mean of the distribution
+      loc:
+        default: '0'
+        type: str
+        description: Translation of random-walk length distribution.
+      order:
+        default: 10
+        type: int
+        description: Maximum walk length / (number of sum terms - 1).
+      filter:
+        default: 'none'
+        type: str
+        description: Which reachability filter to use.
+      use_degree:
+        default: False
+        type: bool
+        description: Use the degree as initial feature.
+      use_lcc:
+        default: False
+        type: bool
+        description: Use the local clustering coefficient features.
+      standardize_input:
+        default: False
+        type: bool
+        description: Standardize the input
+      use_float64:
+        default: False
+        type: bool
+        description: Use double precision.
+  reachnes_rsvd:
+    modes:
+      directed: True
+      weighted: True
+      node_attributed: False
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      dimensions:
+        default: 128
+        type: int
+        description: Embedding dimension.
+      adj_seq:
+        default: "OU::IU"
+        type: str
+        description: Sequence of adjacency sequences for alternating neighbourhoods.
+      rw_distribution:
+        default: 'geometric'
+        type: str
+        description: Str to specify random-walk length distribution.
+      tau:
+        default: '1.0'
+        type: str
+        description: Mean of the distribution
+      loc:
+        default: '1'
+        type: str
+        description: Translation of random-walk length distribution.
+      order:
+        default: 10
+        type: int
+        description: Maximum walk length / (number of sum terms - 1).
+      num_oversampling:
+        default: 8
+        type: int
+        description: Number of oversampling dimensions for RSVD.
+      filter:
+        default: 'log'
+        type: str
+        description: Which reachability filter to use.
+      batch_size:
+        default: 'auto'
+        type: str
+        description: Batch size. Either 'auto' or an integer.
+      use_float64:
+        default: False
+        type: bool
+        description: Use double precision.

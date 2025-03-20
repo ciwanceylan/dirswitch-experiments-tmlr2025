@@ -1,0 +1,308 @@
+{
+  "pubmed": {
+    "reachnes_rsvd": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OU::IU",
+      "dimensions": 1024,
+      "accuracy": 0.82306308954
+    },
+    "reachnes_rsvd_log": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "U",
+      "dimensions": 1024,
+      "filter": "log",
+      "accuracy": 0.8237899391355556
+    },
+    "app": {
+      "dimensions": 1024,
+      "steps": 5,
+      "jump_factor": 0.75,
+      "accuracy": 0.8128347632
+    },
+    "nerd": {
+      "dimensions": 512,
+      "walk_size": 6,
+      "samples": 3,
+      "accuracy": 0.7642982008666668
+    },
+    "dggan": {
+      "dimensions": 128,
+      "lr": 0.0001,
+      "lmbda": 5e-05,
+      "accuracy": 0.41735571996666665
+    },
+    "blade": {
+      "dimensions": 1024,
+      "num_layers": 6,
+      "lr": 0.0001,
+      "num_epochs": 10,
+      "accuracy": 0.6166419654666666
+    },
+    "hope": {
+      "dimensions": 512,
+      "beta_multiplier": 0.9,
+      "accuracy": 0.6540212823266667
+    }
+  },
+  "cocite": {
+    "reachnes_rsvd": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OU::IU",
+      "dimensions": 1024,
+      "accuracy": 0.48377763413333336
+    },
+    "reachnes_rsvd_log": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OOOU::IIIU",
+      "dimensions": 1024,
+      "filter": "log",
+      "accuracy": 0.4892027661822222
+    },
+    "app": {
+      "dimensions": 512,
+      "steps": 5,
+      "jump_factor": 0.25,
+      "accuracy": 0.4671390720133334
+    },
+    "nerd": {
+      "dimensions": 256,
+      "walk_size": 6,
+      "samples": 3,
+      "accuracy": 0.28359901808000004
+    },
+    "dggan": {
+      "dimensions": 128,
+      "lr": 5e-05,
+      "lmbda": 1e-05,
+      "accuracy": 0.17783987237333332
+    },
+    "blade": {
+      "dimensions": 1024,
+      "num_layers": 4,
+      "lr": 0.0001,
+      "num_epochs": 10,
+      "accuracy": 0.24137407886666667
+    },
+    "hope": {
+      "dimensions": 512,
+      "beta_multiplier": 0.9,
+      "accuracy": 0.3088900740666667
+    }
+  },
+  "polblogs": {
+    "reachnes_rsvd": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OU::IU",
+      "dimensions": 128,
+      "accuracy": 0.9031319910800001
+    },
+    "reachnes_rsvd_log": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OOOU::OOIU::OIOU::IOOU::IIIU::IIOU::IOIU::OIIU",
+      "dimensions": 256,
+      "filter": "none",
+      "accuracy": 0.9022371364911113
+    },
+    "app": {
+      "dimensions": 64,
+      "steps": 5,
+      "jump_factor": 0.5,
+      "accuracy": 0.8917225951066666
+    },
+    "nerd": {
+      "dimensions": 128,
+      "walk_size": 5,
+      "samples": 2,
+      "accuracy": 0.90044742732
+    },
+    "dggan": {
+      "dimensions": 128,
+      "lr": 5e-05,
+      "lmbda": 5e-05,
+      "accuracy": 0.56286353468
+    },
+    "blade": {
+      "dimensions": 512,
+      "num_layers": 6,
+      "lr": 0.001,
+      "num_epochs": 10,
+      "accuracy": 0.8964205816866667
+    },
+    "hope": {
+      "dimensions": 32,
+      "beta_multiplier": 0.9,
+      "accuracy": 0.8398210290933333
+    }
+  },
+  "flylarva": {
+    "reachnes_rsvd": {
+      "rw_distribution": "geometric::geometric::geometric::geometric",
+      "tau": "1.0::2.0::3.0::4.0",
+      "loc": "1::2::3::4",
+      "order": 10,
+      "adj_seq": "OOOU::OOIU::OIOU::IOOU::IIIU::IIOU::IOIU::OIIU",
+      "dimensions": 256,
+      "accuracy": 0.5649546119733333
+    },
+    "reachnes_rsvd_log": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OOU::IIU::OIU::IOU",
+      "dimensions": 1024,
+      "filter": "log",
+      "accuracy": 0.5665309979977777
+    },
+    "app": {
+      "dimensions": 1024,
+      "steps": 5,
+      "jump_factor": 0.75,
+      "accuracy": 0.4313245987066667
+    },
+    "nerd": {
+      "dimensions": 256,
+      "walk_size": 5,
+      "samples": 3,
+      "accuracy": 0.40628763281333335
+    },
+    "dggan": {
+      "dimensions": 256,
+      "lr": 0.0005,
+      "lmbda": 4.9999999999999996e-06,
+      "accuracy": 0.18707603542666668
+    },
+    "blade": {
+      "dimensions": 1024,
+      "num_layers": 3,
+      "lr": 0.0001,
+      "num_epochs": 10,
+      "accuracy": 0.4918779820333333
+    },
+    "hope": {
+      "dimensions": 512,
+      "beta_multiplier": 1.0,
+      "accuracy": 0.34551378790666665
+    }
+  },
+  "subelj_cora": {
+    "reachnes_rsvd": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OU::IU",
+      "dimensions": 1024,
+      "accuracy": 0.6644505525933333
+    },
+    "reachnes_rsvd_log": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "U",
+      "dimensions": 1024,
+      "filter": "log",
+      "accuracy": 0.6710264410466666
+    },
+    "app": {
+      "dimensions": 1024,
+      "steps": 7,
+      "jump_factor": 0.75,
+      "accuracy": 0.6566948721866667
+    },
+    "nerd": {
+      "dimensions": 256,
+      "walk_size": 6,
+      "samples": 3,
+      "accuracy": 0.46208518058000003
+    },
+    "dggan": {
+      "dimensions": 256,
+      "lr": 5e-05,
+      "lmbda": 4.9999999999999996e-06,
+      "accuracy": 0.06257736816
+    },
+    "blade": {
+      "dimensions": 1024,
+      "num_layers": 2,
+      "lr": 0.0001,
+      "num_epochs": 30,
+      "accuracy": 0.2880659265
+    },
+    "hope": {
+      "dimensions": 512,
+      "beta_multiplier": 1.0,
+      "accuracy": 0.33855646365333336
+    }
+  },
+  "pyg_email_eu_core": {
+    "reachnes_rsvd": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "OOU::IIU::OIU::IOU",
+      "dimensions": 1024,
+      "accuracy": 0.7678275290333334
+    },
+    "reachnes_rsvd_log": {
+      "rw_distribution": "binom::binom::binom",
+      "tau": "1.0::2.0::3.0",
+      "loc": "1::3::6",
+      "order": 10,
+      "adj_seq": "U",
+      "dimensions": 256,
+      "filter": "log",
+      "accuracy": 0.75887230514
+    },
+    "app": {
+      "dimensions": 512,
+      "steps": 4,
+      "jump_factor": 0.75,
+      "accuracy": 0.76948590382
+    },
+    "nerd": {
+      "dimensions": 1024,
+      "walk_size": 5,
+      "samples": 3,
+      "accuracy": 0.7213930348266667
+    },
+    "dggan": {
+      "dimensions": 512,
+      "lr": 0.0005,
+      "lmbda": 1e-05,
+      "accuracy": 0.12437810945333333
+    },
+    "blade": {
+      "dimensions": 1024,
+      "num_layers": 2,
+      "lr": 0.0001,
+      "num_epochs": 10,
+      "accuracy": 0.67661691542
+    },
+    "hope": {
+      "dimensions": 128,
+      "beta_multiplier": 1.0,
+      "accuracy": 0.50116086236
+    }
+  }
+}

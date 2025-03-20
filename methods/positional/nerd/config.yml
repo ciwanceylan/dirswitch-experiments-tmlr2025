@@ -1,0 +1,22 @@
+methods:
+  nerd:
+    disable: False
+    modes:
+      directed: True
+      weighted: False
+      node_attributed: False
+      edge_attributed: False
+      dynamic: False
+    hyperparameters:
+      dimensions:
+        default: 128
+        type: int
+        description: Dimension of the concatenated proximal embeddings.
+      walk_size:
+        default: 3
+        type: int
+        description: The walk size.
+      samples:
+        default: 1
+        type: int
+        description: Millions of training samples.

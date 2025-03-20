@@ -1,0 +1,14 @@
+name: pyg_cora
+download: True
+graph_file: pyg_cora.npz
+node_labels: multiclass
+node_labels_file: labels.json
+abspath:
+file_info:
+  filetype: npz
+graph_info:
+  num_nodes: 19793
+  weights: False
+  directed: True
+  node_attributes: True
+

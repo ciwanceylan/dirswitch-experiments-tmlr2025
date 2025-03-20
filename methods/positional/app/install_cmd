@@ -1,0 +1,1 @@
+cd ./src && conda run -n neb_app_env make classes

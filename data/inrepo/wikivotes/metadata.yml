@@ -1,0 +1,10 @@
+name: wikivotes
+download: True
+graph_file: wikivotes.npz
+file_info:
+  filetype: npz
+graph_info:
+  num_nodes: 7115
+  weights: False
+  directed: True
+  node_attributes: False

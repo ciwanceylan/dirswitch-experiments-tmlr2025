@@ -1,0 +1,14 @@
+name: flylarva
+relpath: data/incloud/flylarva/
+download: True
+abspath:
+graph_file: flylarva.npz
+node_labels: multiclass
+node_labels_file: labels.json
+file_info:
+  filetype: npz
+graph_info:
+  num_nodes: 2956
+  weights: True
+  directed: True
+  node_attributes: False

@@ -1,0 +1,14 @@
+name: subelj_cora
+download: True
+relpath: data/incloud/subelj_cora/
+abspath:
+graph_file: subelj_cora.csv
+node_labels_file: labels.json
+node_labels: multiclass
+file_info:
+  filetype: csv
+  comment_char: '%'
+graph_info:
+  num_nodes: 23166
+  weights: False
+  directed: True
