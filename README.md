@@ -108,3 +108,12 @@ The scripts default is to run just one dataset, either Cora-ML or Fly Larva.
 - [run_proximity_node_classification_benchmark.sh](scripts/run_proximity_node_classification_benchmark.sh) runs proximity embedding comparison using the best hyperparameters (stored in [algs_best_hps.json](src/nebtools/algs/algs_best_hps.json).
 - [run_ssgnn_experiment.sh](scripts/run_ssgnn_experiment.sh) Runs the comparison using self-supervised graph neural networks.
 - [run_ssgnn_experiment.sh](scripts/run_pokec_investigation.sh) Runs the additional Pokec investigation (Table 16)
+
+## Troubleshooting
+
+The conda environment uses an upgraded version of OpenSSL.
+You may therefore cncounter this error when using GitHub:
+```shell
+OpenSSL version mismatch. Built against 30000020, you have 30200010
+```
+If this happens, simply deactivate the conda environment and proceed as normal.
