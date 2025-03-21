@@ -2,11 +2,11 @@
 
 This repo contains all the source code for the experiments in the TMLR submission "Disobeying Directions:  Switching Random Walk Filters for Unsupervised Node Embedding Learning on Directed Graphs".
 
-Source code for the ReachNEs framework and DirSwitch is located under [reachnes-tmlr2025](reachnes-tmlr2025/README.md)
+Source code for the ReachNEs framework and DirSwitch is located under [reachnes-tmlr2025/](reachnes-tmlr2025/)
 
 The purpose of this package is to benchmark node embedding models.
 Researchers have released various embedding models over the  past 10-15 years.
-These have been implemented using different package version, Python versions, and even different programming languages.
+These have been implemented using different package versions, Python versions, and even different programming languages.
 To be able to benchmark them with a unified setup, this package used conda environments to isolate different node embedding models.
 
 
@@ -90,7 +90,7 @@ The files named `install_cmd` in their respective directories contain the comman
 
 ## Datasets
 
-The 11 smallest dataset are included in the repo under [data/inrepo](data/inrepo).
+The 11 smallest dataset are included in the repo under [data/inrepo/](data/inrepo/).
 
 The 5 remaining datasets can be downloaded following the references provided in the paper.
 
@@ -100,7 +100,7 @@ The 5 remaining datasets can be downloaded following the references provided in 
 Scripts for reproducing the experimental results of the paper are located in [scripts/](scripts/) directory.
 The scripts default is to run just one dataset, either Cora-ML or Fly Larva. 
 
-- [run_dispersal_experiments.sh](scripts/run_dispersal_experiments.sh) is used for the entropy measuring experiments (Figure 5 and 6). Modify the file [experiments/dispersal_analysis](experiments/dispersal_analysis.py) to change the datasets.
+- [run_dispersal_experiments.sh](scripts/run_dispersal_experiments.sh) is used for the entropy measuring experiments (Figure 5 and 6). Modify the file [experiments/dispersal_analysis.py](experiments/dispersal_analysis.py) to change the datasets.
 - [run_graph_alignment_experiments.sh](scripts/run_graph_alignment_experiments.sh) Runs the graph alignment experiments (Figure 7).
 - [run_dirswitch_message_passing_experiments.sh](scripts/run_dirswitch_message_passing_experiments.sh) is for the results in Table 4, 5, 12 and 13.
 - [run_dirswirch_proximity_experiments.sh](scripts/run_dirswirch_proximity_experiments.sh) is for the results in Tables 6 and 7, 14 and 15.
