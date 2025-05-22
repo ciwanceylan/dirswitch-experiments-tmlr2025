@@ -229,7 +229,7 @@ def reachnes_dirswitch_compare_rsvd():
     }
     dims = [512, 1024]
     methods = []
-    for _, adj_seq in orientation_specs:
+    for _, adj_seq in orientation_specs.items():
         for filter_ in ["log"]:
             for dim in dims:
                 methods.append(
